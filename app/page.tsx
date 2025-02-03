@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button"
+import Link from "@/node_modules/next/link";
 
 export default function Home() {
   return (
@@ -95,6 +97,8 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
+        
+        <Link href="/dashboard"><Button>Dashboard</Button></Link>
       </footer>
     </div>
   );
